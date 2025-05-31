@@ -1,157 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Food Items List Format Back end</title>
+    <title>Reports Menu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            padding: 20px;
-            background: #f9f9f9;
+            padding: 40px;
+            background-color: #f7f7f7;
         }
-        h2 {
-            font-size: 20px;
-            margin-bottom: 20px;
+        h1 {
+            color: #333;
         }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 14px;
-            background: #fff;
+        ul {
+            padding-left: 0;
         }
-        th, td {
-            padding: 6px 10px;
-            border-bottom: 1px solid #ddd;
-            vertical-align: top;
+        li {
+            margin-bottom: 12px;
+            list-style: none;
         }
-        th {
-            background-color: #f4f4f4;
-            text-align: left;
-            font-size: 13px;
-        }
-        tr:nth-child(even) {
-            background-color: #fbfbfb;
-        }
-        tr:hover {
-            background-color: #eef6ff;
-        }
-        .pill {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 12px;
-            font-size: 12px;
+        a {
+            text-decoration: none;
+            color: #25A638;
             font-weight: bold;
+            font-size: 16px;
         }
-        .meal-recess {
-            background-color: #fde9d9;
-            color: #d35400;
-        }
-        .meal-lunch {
-            background-color: #d4edda;
-            color: #155724;
-        }
-        .status-yes {
-            background-color: #d4edda;
-            color: #155724;
-        }
-        .status-no {
-            background-color: #f8d7da;
-            color: #721c24;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h2>Food Items List</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Item Name</th>
-                <th>Meal Type</th>
-                <th>Price</th>
-                <th>Category</th>
-                <th>Supplier</th>
-                <th>Stock</th>
-                <th>Item Type</th>
-                <th>Active</th>
-                <th>Created On</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Beef cheese burger</td>
-                <td><span class="pill meal-recess">Recess</span></td>
-                <td>$12.00</td>
-                <td>KC Test Category</td>
-                <td>KC Lunch Test Supplier 1</td>
-                <td>99</td>
-                <td>Variations</td>
-                <td><span class="pill status-yes">Yes</span></td>
-                <td>29/04/2024 10:08</td>
-                <td>✏️</td>
-            </tr>
-            <tr>
-                <td>Beef cheese burger</td>
-                <td><span class="pill meal-lunch">Lunch</span></td>
-                <td>$12.00</td>
-                <td>KC Test Category</td>
-                <td>KC Lunch Test Supplier 1</td>
-                <td>2</td>
-                <td>Variations</td>
-                <td><span class="pill status-yes">Yes</span></td>
-                <td>07/01/2025 15:32</td>
-                <td>✏️</td>
-            </tr>
-            <tr>
-                <td>Beef Wellington</td>
-                <td><span class="pill meal-lunch">Lunch</span></td>
-                <td>$15.00</td>
-                <td>KC Test Category</td>
-                <td>KC Lunch Test Supplier 1</td>
-                <td>10</td>
-                <td>Variations</td>
-                <td><span class="pill status-yes">Yes</span></td>
-                <td>09/03/2024 09:40</td>
-                <td>✏️</td>
-            </tr>
-            <tr>
-                <td>Beef Wellington</td>
-                <td><span class="pill meal-recess">Recess</span></td>
-                <td>$15.00</td>
-                <td>KC Test Category</td>
-                <td>KC Lunch Test Supplier 1</td>
-                <td>10</td>
-                <td>Variations</td>
-                <td><span class="pill status-yes">Yes</span></td>
-                <td>07/11/2024 16:29</td>
-                <td>✏️</td>
-            </tr>
-            <tr>
-                <td>Biryani</td>
-                <td><span class="pill meal-recess">Recess</span></td>
-                <td>$2.00</td>
-                <td>Indian Food</td>
-                <td>Test_supplier</td>
-                <td>10</td>
-                <td>Standard</td>
-                <td><span class="pill status-yes">Yes</span></td>
-                <td>08/11/2024 16:30</td>
-                <td>✏️</td>
-            </tr>
-            <tr>
-                <td>Biryani</td>
-                <td><span class="pill meal-lunch">Lunch</span></td>
-                <td>$2.00</td>
-                <td>Indian Food</td>
-                <td>Test_supplier</td>
-                <td>10</td>
-                <td>Standard</td>
-                <td><span class="pill status-no">No</span></td>
-                <td>26/07/2024 19:48</td>
-                <td>✏️</td>
-            </tr>
-        </tbody>
-    </table>
+    <h1>Available Reports</h1>
+    <ul>
+        <li><a href="Improved_orders_Table.html">Improved Orders Table</a></li>
+        <li><a href="orders-report.html">Orders Report</a></li>
+        <li><a href="food-summary.html">Food Summary</a></li>
+        <li><a href="tickets-report.html">Tickets Report</a></li>
+    </ul>
 </body>
 </html>
