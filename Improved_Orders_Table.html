@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Improved Orders Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            background: #fff;
+        }
+        th, td {
+            border-bottom: 1px solid #ddd;
+            padding: 6px 10px;
+            vertical-align: top;
+        }
+        th {
+            background-color: #f4f4f4;
+            text-align: left;
+            font-size: 13px;
+            letter-spacing: 0.3px;
+        }
+        tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+        tr:nth-child(odd) {
+            background-color: #fbfbfb;
+        }
+        tr:hover {
+            background-color: #eef6ff;
+        }
+        .order-no {
+            font-weight: bold;
+            color: #1a1a1a;
+        }
+        .pill {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .status-confirmed {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .status-cancelled {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+        .payment-paid {
+            background-color: #d1ecf1;
+            color: #0c5460;
+        }
+        .payment-refunded {
+            background-color: #fff3cd;
+            color: #856404;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Order No</th>
+                <th>Status</th>
+                <th>Payment</th>
+                <th>Student</th>
+                <th>Contact</th>
+                <th>School</th>
+                <th>Supplier</th>
+                <th>Total</th>
+                <th>Delivery Date</th>
+                <th>Created On</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="order-no">11983</td>
+                <td><span class="pill status-confirmed">Confirmed</span></td>
+                <td><span class="pill payment-paid">Paid</span></td>
+                <td>student1 user1</td>
+                <td>Gmail Account<br>satgurutecnologies12@gmail.com<br>123456789</td>
+                <td>SMS</td>
+                <td>NewTest_Supplier</td>
+                <td>$12.00</td>
+                <td>31/05/2025</td>
+                <td>30/05/2025 20:19</td>
+                <td>＋ ❌</td>
+            </tr>
+            <tr>
+                <td class="order-no">11981</td>
+                <td><span class="pill status-cancelled">Cancelled</span></td>
+                <td><span class="pill payment-refunded">Refunded</span></td>
+                <td>student1 user1</td>
+                <td>Gmail Account<br>satgurutecnologies12@gmail.com<br>123456789</td>
+                <td>SMS</td>
+                <td>NewTest_Supplier</td>
+                <td>$22.00</td>
+                <td>01/06/2025</td>
+                <td>30/05/2025 18:20</td>
+                <td>＋ ❌</td>
+            </tr>
+            <tr>
+                <td class="order-no">11979</td>
+                <td><span class="pill status-cancelled">Cancelled</span></td>
+                <td><span class="pill payment-refunded">Refunded</span></td>
+                <td>student1 user1</td>
+                <td>Gmail Account<br>satgurutecnologies12@gmail.com<br>123456789</td>
+                <td>SMS</td>
+                <td>NewTest_Supplier</td>
+                <td>$22.00</td>
+                <td>31/05/2025</td>
+                <td>30/05/2025 18:04</td>
+                <td>＋ ❌</td>
+            </tr>
+            <tr>
+                <td class="order-no">11977</td>
+                <td><span class="pill status-cancelled">Cancelled</span></td>
+                <td><span class="pill payment-refunded">Refunded</span></td>
+                <td>student1 user1</td>
+                <td>Gmail Account<br>satgurutecnologies12@gmail.com<br>123456789</td>
+                <td>SMS</td>
+                <td>NewTest_Supplier</td>
+                <td>$12.00</td>
+                <td>31/05/2025</td>
+                <td>30/05/2025 17:59</td>
+                <td>＋ ❌</td>
+            </tr>
+            <tr>
+                <td class="order-no">11974</td>
+                <td><span class="pill status-cancelled">Cancelled</span></td>
+                <td><span class="pill payment-refunded">Refunded</span></td>
+                <td>user2 student2</td>
+                <td>John Doe<br>testc@yopmail.com<br>01234 567 890</td>
+                <td>SMS</td>
+                <td>NewTest_Supplier</td>
+                <td>$8.00</td>
+                <td>31/05/2025</td>
+                <td>30/05/2025 17:48</td>
+                <td>＋ ❌</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
